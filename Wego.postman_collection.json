@@ -1,0 +1,82 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Wego",
+		"_postman_id": "c4e6172a-d6d3-1cde-f0a8-15aadde13afa",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/carparks/nearest?latitude=1.39326&longitude=103.897&page=1&per_page=3",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/carparks/nearest?latitude=1.39326&longitude=103.897&page=1&per_page=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carparks",
+						"nearest"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "1.39326",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "longitude",
+							"value": "103.897",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "per_page",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Nearest car parking "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/carparks/location",
+			"request": {
+				"url": "http://localhost:8080/carparks/location",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Fetching all location data"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/carparks/availability",
+			"request": {
+				"url": "http://localhost:8080/carparks/availability",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "fetching all availability data"
+			},
+			"response": []
+		}
+	]
+}
